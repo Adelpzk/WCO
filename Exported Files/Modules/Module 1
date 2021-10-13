@@ -1,0 +1,72 @@
+Attribute VB_Name = "Module1"
+Sub ShownewDeliverable()
+
+
+Sheets("Classes_Page").Range("A1200").Value = "New"
+addNewdeliverable.Show
+
+
+End Sub
+
+Sub ShowgradeReport()
+
+gradeReport.Show
+
+End Sub
+
+Sub ShowReflection()
+
+Reflection.Show
+
+End Sub
+Sub Completed_task()
+
+CompletedTask.Show
+
+End Sub
+Sub ShowEdittask()
+
+Sheets("Classes_Page").Range("A1200").Value = "Edit"
+editTask.Show
+
+End Sub
+
+Sub ClearReflection()
+'clear button for reflection
+Range("A2:C17").Select
+Selection.ClearContents
+End Sub
+
+
+Sub TestDynamic()
+' Just a test to see if one of the formula functions well or not
+Sheets("Main Page").Range("Dyn_Name").Select
+
+End Sub
+
+
+Sub ClearClasses()
+Sheets("Classes_Page").Range("C2:Q16").Select
+Selection.ClearContents
+
+End Sub
+
+Sub ClearGradereport()
+
+Sheets("Grade Report").Range("A3:T30").Select
+Selection.ClearContents
+
+End Sub
+
+Sub ClearCompletedTask()
+
+Sheets("Completed Tasks").Range("A2:I30").Select
+Selection.ClearContents
+
+End Sub
+
+Sub ClearMainPage()
+Sheets("Main Page").Range("H3:R23").Select
+Selection.ClearContents
+
+End Sub
